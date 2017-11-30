@@ -1,2 +1,2 @@
 # wechatShop-springboot-vue1
-微信公众号购物开发 包括微信支付   springboot  vue
+练习Spring Boot开发的微信点餐系统http://coding.imooc.com/class/117.html   （如若侵权，通知后删除）
