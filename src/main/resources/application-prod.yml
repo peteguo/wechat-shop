@@ -1,0 +1,49 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.3.174/sell?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 192.168.3.174
+    port: 6379
+# 接口url前缀
+server:
+  context-path: /sell
+#  port: 8090
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+#  #path: /var/log/tomcat/
+#  file: /var/log/tomcat/sell.log
+#  level: debug
+#wx2edc8548d26a0f77
+#2cb115ace4b13928cab5eed4a7c4938f
+wechat:
+  mpAppId: wxb5062848cc7dfcbd
+  mpAppSecret: 7ce626ba813e5f6164abc9f89e3fd19b
+  openAppId: wxb5062848cc7dfc78
+  openAppSecret: 9ce626ba813e5f6164abc9f89e3fd19b
+  mchId: 14002134
+  mchKey: c33333233333333
+  keyPath: /var/weixin_cert/h5.p12
+  notifyUrl: http://dahuihui.natapp1.cc/sell/pay/notify
+  templateId:
+    orderStatus: WcRkOTYZyMLQpH2oQfWocOYeucXVQX1gMxaxkmnEHWU
+
+projectUrl:
+  wechatMpAuthorize: dahuihui.natapp1.cc
+  wechatOpenAuthorize: dahuihui.natapp1.cc
+  sell: dahuihui.natapp1.cc
+logging:
+  level:
+    com.imooc.dataobject.mapper: trace
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+
+
